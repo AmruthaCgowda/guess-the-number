@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guess the number</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center flex items-center justify-center h-screen">
+      <form id="form" class="input-container border border-solid border-gray-300 p-6 rounded-sm shadow-lg">
+        <label for="input" class="text-base">Enter a guess between 0 to 100</label><br /><br />
+        <input
+          type="number"
+          id="input"
+          placeholder="Enter a number"
+          autocomplete="off"
+          min="0"
+          max="100"
+          required
+          autofocus
+          class="outline-none border border-solid border-gray-300 rounded-sm py-1 px-1 w-34 mb-4"
+        />
+
+        <div class="flex items-center gap-2 justify-center mb-4">
+          <input type="submit" id="submit" class="px-4 py-1 bg-sky-600 text-white rounded-sm cursor-pointer" value="Submit" />
+          <button type="button" id="startGame" class="px-4 py-1 bg-sky-600 text-white rounded-sm cursor-pointer" disabled>Start Game</button>
+        </div>
+
+        <div>
+          <p><output id="output" class="text-sm text-blue-800"></output></p>
+          <p><output id="guessDisplay" class="text-sm text-sky-900 font-semibold"></output></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
