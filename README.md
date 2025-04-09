@@ -2,7 +2,7 @@
 
 A fun and interactive number guessing game built with JavaScript.
 
-🔗 **Live Demo:** [Play Now](https://amruthacgowda.github.io/guess-the-number/)
+🔗 **Live Demo:** [Play Now](https://amruthacgowda.github.io/guess-the-number/){:target="_blank"}
 
 ## 📌 How to Play
 1. The system randomly selects a number.
